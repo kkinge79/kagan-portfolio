@@ -279,6 +279,7 @@ ul li ul.dropdown li {
 }
 .buttons a {
 	float: left; 
+  margin: 0 5px;
 }
 a#link {position: absolute; left: 20px; bottom: 10px; text-decoration: none; color: #555; font-weight: bold;}
 .btn,
@@ -402,7 +403,7 @@ input[type="submit"]:hover,
   }
   .loopgif{
     position: relative;
-    width: 40rem;
+    width: 50%;
   }
   /* about me */
   #about-me {
