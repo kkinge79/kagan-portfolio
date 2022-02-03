@@ -1,0 +1,515 @@
+/* Initial Setup */
+html {
+  box-sizing: border-box;
+  }
+*, 
+*::before, 
+*::after { 
+  box-sizing: inherit;
+}
+:root {
+    font-size: 62.5%
+}
+body {
+  margin: auto;
+  min-height: 100vh;
+  font-family: 'Carme', sans-serif;
+}
+
+/* Splash image */
+.fade {
+  opacity: 0;
+}
+.splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  z-index: 200;
+  color: white;
+  text-align: center;
+  line-height: 90vh;
+  font-size: 5rem;
+}
+.splash.display-none {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 102vh;
+  background-color: black;
+  z-index: -10;
+  color: white;
+  text-align: center;
+  line-height: 90vh;
+  transition: all 0.5s;
+}
+@keyframes fadeIn{
+  to{
+    opacity: 1;
+  }
+}
+.fade-effect{
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+/* navbar*/
+.logo {
+  width: 6rem;
+  margin: 5px;
+}
+.nav-link{
+  color: black !important;
+  font-size: 1.4rem;
+}
+/* navbar projects dropdown */
+ul {
+  padding: 0;
+  list-style: none;
+}
+ul li {
+  display: inline-block;
+  position: relative;
+  line-height: 21px;
+  text-align: left;
+}
+ul li a {
+  display: block;
+  padding: 8px 25px;
+  color: black;
+  text-decoration: none;
+}
+ul li a:hover {
+  color: black;
+  text-decoration: none;
+}
+ul li ul.dropdown {
+  min-width: 100%;
+  background: white;
+  display: none;
+  position: absolute;
+  z-index: 999;
+  left: 0;
+}
+ul li:hover ul.dropdown {
+  display: block;
+}
+ul li ul.dropdown li {
+  display: block;
+}
+
+
+/* greeting card */
+.greeting-card {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} 
+.name {
+  text-align: center;
+}
+.fname {
+  font-size: 7rem;
+}
+.lname {
+  font-size: 7rem;
+}
+.divider {
+  width: 30rem;
+  height: 4rem;
+  margin: 15px;
+}
+.job-title {
+  font-size: 4rem;
+}
+.container-one, .container-two {
+  margin: 7px;
+}
+.container-two {
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.loopgif {
+  width: 30rem;
+  position:relative;
+}
+
+/* ABOUT ME */
+#about-me{
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+  padding-bottom: 20px 0;
+}
+.title {
+  font-size: 4rem;
+}
+.description {
+ font-size: 2rem;
+}
+.portrait {
+  width: 80%;
+  height: 50%;
+  border-radius: 1%;
+  position: relative;
+}
+
+/* PROJECTS */
+
+/* #projects {
+
+} */
+
+/* Tilt */
+#tilt{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+  min-height: 100vh;
+
+  padding: 20px 0;
+}
+.tilt-screenshot{
+  width: 90%;
+  height: auto;
+  border-radius: 1%;
+  position: relative;
+}
+
+/* dnd */
+#dnd{
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+  padding: 20px 0;
+}
+.dnd-screenshot{
+  width: 90%;
+  height: auto;
+  border-radius: 1%;
+  position: relative;
+}
+
+/* daybyday */
+#daybyday{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+  min-height: 100vh;
+  padding: 20px 0;
+}
+.daybyday-screenshot{
+  width: 90%;
+  height: auto;
+  border-radius: 1%;
+  position: relative;
+}
+
+/* Slots */
+#slots {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+  padding: 20px 0;
+}
+.slots-screenshot{
+  width: 90%;
+  height: auto;
+  border-radius: 1%;
+  position: relative;
+}
+
+/* skills */
+#skills{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+}
+.skill-container img{
+  width: 10.5rem;
+  height: 10.5rem;
+  margin: 15px;
+}
+.skill-container li{
+  text-align: center;
+}
+.skill-container h1{
+  margin: 0 0 20px 0;
+}
+
+.skill-container .title{
+  margin-top: 20px;
+}
+
+/* github buttons */
+.buttons {
+	overflow: hidden;
+  margin: 10px 0;
+}
+.buttons > div {
+	width: calc(50% - 40px);
+	padding: 20px;
+	float: left;
+	position: fixed;
+	bottom: 0;
+	top: 0;
+}
+.buttons .dark {
+	background: #000;
+	left: 50%;
+}
+.buttons a {
+	float: left; 
+}
+a#link {position: absolute; left: 20px; bottom: 10px; text-decoration: none; color: #555; font-weight: bold;}
+.btn,
+input[type="submit"]{
+	cursor: pointer;
+    border-radius: 0px;
+    text-decoration: none;
+    padding: 12px 18px;
+    font-size: 12px;
+    line-height: 19px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif; font-weight:400;
+    letter-spacing: 3px;
+    -webkit-transition: all .4s ease-in-out;
+       -moz-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+         -o-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+}
+.btn-mid {
+    border-radius: 0px;
+    text-decoration: none;
+    padding: 14px 21px;
+    font-size: 13px;
+    line-height: 25px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif; font-weight:400;
+    letter-spacing: 3px;
+    -webkit-transition: all .4s ease-in-out;
+       -moz-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+         -o-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+}
+.btn-big {
+    border-radius: 0px;
+    text-decoration: none;
+    padding: 18px 24px;
+    font-size: 14px;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif; font-weight:400;
+    letter-spacing: 3px;
+    -webkit-transition: all .4s ease-in-out;
+       -moz-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+         -o-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+}
+.btn:hover,
+input[type="submit"]:hover{
+    -webkit-transition: all .4s ease-in-out;
+       -moz-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+         -o-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+}
+.btn-white{
+    border:solid 2px #fff;
+    background: transparent;
+    color: #fff !important;
+}
+.btn-white:hover{
+    border:solid 2px #fff;
+    background: #fff;
+    color: #1f1f1f !important;
+}
+.btn-dark,
+input[type="submit"]{
+    border:solid 2px #1f1f1f;
+    background: transparent;
+    color: #1f1f1f;
+}
+.btn-dark:hover,
+input[type="submit"]:hover,
+.btn-dark.active{
+    border:solid 2px #1f1f1f;
+    background: #1f1f1f;
+    color: #fff;
+}
+.btn-color{
+    background: transparent;
+}
+.btn-color:hover{
+    color: #fff;
+}
+
+/* larger screen format */
+@media only screen and (min-width: 960px) {
+  /* greeting card */
+  .greeting-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .container-one {
+    display: flex;
+    flex-direction: column;
+  }
+  .name{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+  }
+  .fname{
+    font-size: 9rem;
+  }
+  .lname{
+    font-size: 9rem;
+    background-color: black;
+    color: white;
+    border-radius: 1%;
+  }
+  .job-title{
+    font-size: 6.5rem;
+    text-align: center;
+  }
+  .divider{
+    width: 45rem;
+  }
+  .loopgif{
+    position: relative;
+    width: 40rem;
+  }
+  /* about me */
+  #about-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  #about-me h1, p {
+    margin: 10px;
+  }
+  #about-me .container-one {
+    width: 55%;
+    border-left: 2px solid white;
+  }
+  .portrait {
+    width: 45rem;
+    height: auto;
+    border-radius: 1%;
+    margin-top: 10px;
+  }
+  /* tilt */
+  #tilt{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #tilt .container-one {
+    padding: 10px;
+    border-left: 2px solid black;
+    width: 55%;
+  }
+  .tilt-screenshot{
+    width: 45rem;
+    height: auto;
+    border-radius: 1%;
+    margin-top: 10px;
+  }
+  /* dnd */
+  #dnd{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  #dnd .container-one{
+    padding: 10px;
+    border-left: 2px solid white;
+    width: 55%;
+  }
+  .dnd-screenshot{
+    width: 45rem;
+    height: auto;
+    border-radius: 1%;
+    margin-top: 10px;
+  }
+  /* daybyday */
+  #daybyday{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #daybyday .container-one{
+    padding: 10px;
+    border-left: 2px solid black;
+    width: 55%;
+  }
+  .daybyday-screenshot{
+    width: 45rem;
+    height: auto;
+    border-radius: 1%;
+    margin-top: 10px
+  }
+  /* slots */
+  #slots{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  #slots .container-one{
+    padding: 10px;
+    border-left: 2px solid white;
+    width: 55%;
+  }
+  .slots-screenshot{
+    width: 45rem;
+    height: auto;
+    border-radius: 1%;
+    margin-top: 10px;
+  }
+
+  /* skills */
+  #skills{
+    width: 100%;
+  }
+  .skill-container{
+    width: 75%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* arrow button */
+}

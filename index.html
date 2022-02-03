@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Carme&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <script defer src="./js/app.js"></script>
+  <title>Kagan Kingery Portfolio</title>
+</head>
+<body>
+  <div class="splash">
+    <p class="fade-effect">Welcome</p>
+  </div> 
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <img class="logo" src="/styles/images/k.png" alt="k logo">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#about-me">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects ▾</a>
+          <ul class="dropdown">
+            <li><a href="#tilt">tilt</a></li>
+            <li><a href="#dnd">DnD Character Pub</a></li>
+            <li><a href="#daybyday">DayByDay</a></li>
+            <li><a href="#slots">Slot Machine</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mailto: kagan.l.kingery@gmail.com?subject= Hi Kagan, I'd Like to hire you!"   target="_blank">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://docs.google.com/document/d/1LXFR-lDd5N0zqHmUWFY95IAycay4H9sMH94eS_J5OH0/edit?usp=sharing">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.linkedin.com/in/kagan-kingery/">LinkedIn</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/kkinge79">Github</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="greeting-card">
+    <div class="container-one">
+      <div class="name">
+        <h1 class="fname">Kagan</h1>
+        <h1 class="lname">Kingery</h1>
+      </div>
+      <img class="divider" src="/styles/images/divider.png" alt="line divider"">
+      <h1 class="job-title">Software Engineer</h1>
+    </div>
+    <div class="container-two">
+      <img class="loopgif" src="/styles/images/gif.gif" alt=loopgif">
+    </div>
+  </div> 
+
+  <div id="about-me">
+    <div class="container-one fade"> 
+      <h1 class="title">About Me</h1>  
+      <div class="description">
+        <p>
+          I'm a software engineer specializing in designing and building first rate applications. My background in leadership enables me to approach each project with a flexible mind and driven determination.
+        </p>
+        <p>
+          I’ve enjoyed working with computers for as long as I can remember. Whether it’s the near constant stream of app ideas I have, to my passion for creating, it’s always led me back to a computer. After years of being interested in programming (and lots of self teaching) I enrolled in the SEI course at General Assembly. Finding my calling through computers has been the most rewarding experience and I’m excited to continue to develop my passion for it. 
+        </p>
+      </div>
+    </div> 
+    <div class="container-two">
+      <img class="portrait" src="/styles/images/portrait.jpeg">
+    </div>
+  </div>
+  <div id="projects">
+    <div id="tilt">
+      <div class="container-two">
+        <img class="tilt-screenshot" src="/styles/images/tilt.jpeg">
+      </div>
+      <div class="container-one fade"> 
+        <h1 class="title">tilt</h1>
+        <div class="buttons">
+          <a class="btn btn-dark" href="https://github.com/kkinge79/tilt">Github</a>
+        </div>
+        <div class="description">
+          <p>tilt is a React Native app with the use of a 3rd party API called Rawg.io that allows users to search for games, leave reviews, and add comments! Users can also add games to different lists on their profile such as 'Favorites,Played, and what youre keeping an eye on' from a database collection of over 350,000 games to choose from. Postman played a huge part in the production of this app. This app was made with React Native, bootstrap, node.js, Mongo.DB, express, CSS, javascript, mongoose. This app is deployed on Heroku.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="dnd">
+      <div class="container-two">
+        <img class="dnd-screenshot" src="/styles/images/dnd.jpeg">
+      </div>
+      <div class="container-one fade"> 
+        <h1 class="title">DnD Character Pub</h1>
+        <div class="buttons">
+          <a class="btn btn-white" href="https://github.com/kkinge79/tilt">Github</a>
+        </div>
+        <div class="description">
+          <p>
+            DnD Character pub is a Full Stack CRUD app that allows users to customize their own characters. Users are able to leave reviews and comments on other users characters. Each character has a average rating score based off of what other users think. This project incorporates one of my favorite hobbies and i enjoyed building this from scratch. I plan to add a lot more functionality which is listed in the Readme section on my github. Made with express, node.js, Google Oauth, CSS. This app is deployed on Heroku.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="daybyday">
+      <div class="container-two">
+        <img class="daybyday-screenshot" src="/styles/images/daybyday.jpeg">
+      </div>
+      <div class="container-one fade">
+        <h1 class="title">DayByDay</h1>
+        <div class="buttons">
+          <a class="btn btn-dark" href="https://github.com/kkinge79/daybyday">Github</a>
+        </div>
+        <div class="description">
+          <p>DayByDay is a Full Stack CRD app that allows users to track their daily life mood. The Homepage is a collection of the users data and depending how the user rated their day, the card will be either green, yellow or red. The purpose is to let the users see how theyre doing mental health wise as a whole. This app is meant for personal use and has a sign in requirement. Made with Django, Python, Bootstrap, CSS. This app is deployed on Heroku.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="slots">
+      <div class="container-two">
+        <img class="slots-screenshot" src="/styles/images/slots.jpeg">
+      </div>
+      <div class="container-one fade">
+        <h1 class="title">Slot Machine Game</h1>
+        <div class="buttons">
+          <a class="btn btn-white" href="https://github.com/kkinge79/slot-machine">Github</a>
+        </div>
+        <div class="description">
+          <p> This app is an interactive minimalist slot machine with credits balance system. With 7 different winning combinations, Users can win the jackpot worth 5000 credits or lose the chance game and lose up to 5000 credits! This game features a light and dark mode to further enhance the user experience.  Made with Javascript, bootstrap, and CSS. This app is deployed on Netlify.
+          </p>
+          </div>
+      </div>
+    </div>
+  </div>  
+  <div id="skills">
+    <ul class="skill-container fade">
+      <h1 class="title">Skills</h1>
+      <li>
+        <img src="styles/images/skills/js.jpeg" alt="js logo" width="50px">
+        <h1>Javascript</h1>
+      </li>
+      <li>
+        <img src="styles/images/skills/python.png" alt="python logo" width="50px">
+        <h1>Python</h1>
+      </li>
+      <li>
+        <img src="styles/images/skills/css.png" alt="css logo" width="50px">  
+        <h1>CSS</h1>
+      </li>
+      <li>
+        <img src="styles/images/skills/node.png" alt="node logo" width="50px">
+        <h1>Node.js</h1>
+      </li>
+      <li>
+        <img src="styles/images/skills/mongo.png" alt="mongoDB logo" width="50px">
+        <h1>Mongo.db</h1>
+      </li>
+   
+      <li>
+        <img class="express" src="styles/images/skills/express.jpeg" alt="express logo" width="50px">
+        <h1>Express</h1>
+      </li>
+      <li>
+        <img src="styles/images/skills/pgsql.png" alt="PostgreSQL logo" width="50px">
+        <h1>PostgreSQL</h1>
+      </li>
+      <li>
+        <img src="styles/images/skills/django.png" alt="django logo" width="50px"> 
+        <h1>Django</h1> 
+      </li>
+      <li>
+        <img src="styles/images/skills/react.png" alt="react logo" width="50px">
+        <h1>React</h1>
+      </li>
+      <li>
+        <img src="styles/images/skills/bootstrap.png" alt="bootstrap logo" width="50px">
+        <h1>Bootstrap</h1> 
+      </li>
+      <li>
+        <img src="styles/images/skills/api.png" alt="api logo" width="50px">
+        <h1>Api</h1>
+      </li>
+      <li>
+        <img src="styles/images/skills/github.png" alt="github logo" width="50px">
+        <h1>Github</h1>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
