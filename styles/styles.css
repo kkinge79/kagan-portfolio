@@ -159,8 +159,7 @@ ul li ul.dropdown li {
  font-size: 2rem;
 }
 .portrait {
-  width: 80%;
-  height: 50%;
+  width: 40%;
   border-radius: 1%;
   position: relative;
 }
@@ -182,8 +181,7 @@ ul li ul.dropdown li {
   padding: 20px 0;
 }
 .tilt-screenshot{
-  width: 90%;
-  height: auto;
+  width: 50%;
   border-radius: 1%;
   position: relative;
 }
@@ -198,7 +196,7 @@ ul li ul.dropdown li {
   padding: 20px 0;
 }
 .dnd-screenshot{
-  width: 90%;
+  width: 50%;
   height: auto;
   border-radius: 1%;
   position: relative;
@@ -214,7 +212,7 @@ ul li ul.dropdown li {
   padding: 20px 0;
 }
 .daybyday-screenshot{
-  width: 90%;
+  width: 50%;
   height: auto;
   border-radius: 1%;
   position: relative;
@@ -230,7 +228,7 @@ ul li ul.dropdown li {
   padding: 20px 0;
 }
 .slots-screenshot{
-  width: 90%;
+  width: 50%;
   height: auto;
   border-radius: 1%;
   position: relative;
