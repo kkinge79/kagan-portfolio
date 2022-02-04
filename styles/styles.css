@@ -88,7 +88,7 @@ ul li a:hover {
   text-decoration: none;
 }
 ul li ul.dropdown {
-  min-width: 100%;
+  width: 225px;
   background: white;
   display: none; 
   position: absolute;
